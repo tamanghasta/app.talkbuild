@@ -2,12 +2,12 @@
 <widget id="talk.build" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>TalkBuild</name>
     <description>
-        Talk.Build - The Social Media Network for construction professionals
+       Social Media Network for construction professionals
     </description>
     <author email="developers@cfadigital.com" href="http://cfa-marketing.com">
         Cfa Developers
     </author>
     <content src="index.html" />
     <access origin="*" />
-
+    <icon src="icon.png" gap:role="default" />
 </widget>
