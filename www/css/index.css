@@ -1,7 +1,18 @@
 
-.container{
-    height: 100%;
-    width: 100%;
+body {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 21px;
+    color: #000;
+    background-color: #fff;
+}
+body{
+    margin : 0;
 }
 html, body {
     height: 100%;
@@ -14,4 +25,9 @@ div {
 object {
     width: 100%;
     min-height: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
 }
