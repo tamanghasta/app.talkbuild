@@ -16,8 +16,4 @@
     <content src="index.html" />
     <access origin="*" />
     <icon src="icon.png" />
-    <feature name="SplashScreen">
-        <param name="wp-package" value="SplashScreen" />
-        <param name="onload" value="true" />
-    </feature>
 </widget>
