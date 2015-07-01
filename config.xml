@@ -7,6 +7,29 @@
     <author email="developers@cfadigital.com" href="http://cfa-marketing.com">
         Cfa Developers
     </author>
+    <preference name="splashscreen" value="splash" />
+    <preference name="splashScreenDelay" value="10000" />
+
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+    </feature>
+    <!-- Preferences -->
+    <!--<preference name="AutoHideSplashScreen" value="false" />-->
+    <!--<preference name="SplashScreenDelay" value="10000" />-->
+    <!--<platform name="android">-->
+        <!--&lt;!&ndash; you can use any density that exists in the Android project &ndash;&gt;-->
+        <!--<splash src="res/screen/android/splash-land-hdpi.png" density="land-hdpi"/>-->
+        <!--<splash src="res/screen/android/splash-land-ldpi.png" density="land-ldpi"/>-->
+        <!--<splash src="res/screen/android/splash-land-mdpi.png" density="land-mdpi"/>-->
+        <!--<splash src="res/screen/android/splash-land-xhdpi.png" density="land-xhdpi"/>-->
+
+        <!--<splash src="res/screen/android/splash-port-hdpi.png" density="port-hdpi"/>-->
+        <!--<splash src="res/screen/android/splash-port-ldpi.png" density="port-ldpi"/>-->
+        <!--<splash src="res/screen/android/splash-port-mdpi.png" density="port-mdpi"/>-->
+        <!--<splash src="res/screen/android/splash-port-xhdpi.png" density="port-xhdpi"/>-->
+    <!--</platform>-->
+    <!--/. Preferences -->
+
     <content src="index.html" />
     <access origin="*" />
     <icon src="icon.png" />

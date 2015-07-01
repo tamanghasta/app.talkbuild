@@ -223,4 +223,7 @@
     <ItemGroup>
         <Compile Include="Plugins\org.apache.cordova.console\DebugConsole.cs" />
     </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Plugins\org.apache.cordova.splashscreen\SplashScreen.cs" />
+    </ItemGroup>
 </Project>

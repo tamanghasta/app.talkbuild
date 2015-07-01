@@ -4,6 +4,10 @@
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
     <name>TalkBuild</name>
     <description>
        Social Media Network for construction professionals
@@ -11,6 +15,8 @@
     <author email="developers@cfadigital.com" href="http://cfa-marketing.com">
         Cfa Developers
     </author>
+    <preference name="splashscreen" value="splash" />
+    <preference name="splashScreenDelay" value="10000" />
     <content src="index.html" />
     <access origin="*" />
     <icon src="icon.png" />
