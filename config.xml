@@ -7,12 +7,12 @@
     <author email="developers@cfadigital.com" href="http://cfa-marketing.com">
         Cfa Developers
     </author>
-    <preference name="splashscreen" value="splash" />
-    <preference name="splashScreenDelay" value="10000" />
+    <!--<preference name="splashscreen" value="splash" />-->
+    <!--<preference name="splashScreenDelay" value="10000" />-->
 
-    <feature name="SplashScreen">
-        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
-    </feature>
+    <!--<feature name="SplashScreen">-->
+        <!--<param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />-->
+    <!--</feature>-->
     <!-- Preferences -->
     <!--<preference name="AutoHideSplashScreen" value="false" />-->
     <!--<preference name="SplashScreenDelay" value="10000" />-->

@@ -23,10 +23,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="config.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="screen.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/platforms/android/res/drawable-land-hdpi/screen.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="14" selection-start="656" selection-end="656" vertical-scroll-proportion="0.3207547" vertical-offset="0" max-vertical-offset="742">
+            <state line="7" column="22" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
               <folding />
             </state>
           </provider>
@@ -44,16 +51,16 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="6" selection-start="841" selection-end="841" vertical-scroll-proportion="-10.538462" vertical-offset="49" max-vertical-offset="782">
+            <state line="28" column="65" selection-start="1409" selection-end="1409" vertical-scroll-proportion="-16.76923" vertical-offset="40" max-vertical-offset="782">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+            <state line="22" column="25" selection-start="981" selection-end="981" vertical-scroll-proportion="0.48697916" vertical-offset="0" max-vertical-offset="768">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -99,15 +106,6 @@
         <entry file="file://$PROJECT_DIR$/www/ratchet/css/ratchet.css">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="24480">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/platforms/ios/TalkBuild/config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="731">
               <folding />
             </state>
           </provider>
@@ -227,20 +225,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="talkbuild" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app.talkbuild" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="platforms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -490,11 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platforms/android/res/drawable/icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/ratchet/css/ratchet.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="24480">
@@ -514,24 +493,12 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="43" selection-start="305" selection-end="317" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
           <folding>
             <element signature="n#!!doc;n#onLoad#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="6" selection-start="841" selection-end="841" vertical-scroll-proportion="-10.538462" vertical-offset="49" max-vertical-offset="782">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -542,19 +509,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/platforms/android/res/drawable/icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/res/drawable-land-hdpi/screen.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="14" selection-start="656" selection-end="656" vertical-scroll-proportion="0.3207547" vertical-offset="0" max-vertical-offset="742">
+        <state line="7" column="22" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="65" selection-start="1409" selection-end="1409" vertical-scroll-proportion="-16.76923" vertical-offset="40" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="25" selection-start="981" selection-end="981" vertical-scroll-proportion="0.48697916" vertical-offset="0" max-vertical-offset="768">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
