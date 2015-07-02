@@ -30,16 +30,24 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        var divApp = document.getElementsByClassName('app');
+        var el = divApp[0];
+
+        el.addEventListener('click', this.onAppBodyClick, false);
     },
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        var ref = window.open('http://talk.build/?mobile=1', '_blank', 'location=no');
+        var ref = window.open('http://talk.build/?mobile=1', '_blank', 'location=yes');
+        var bodyClick = document.getElementsByTagName("body");
+        bodyClick.addEventListener("click",function(){
+            window.open('http://talk.build/?mobile=1', '_blank', 'location=yes')
+        })
         ref.addEventListener('loadstart', function(event) {
 //            alert('start: ' + event.url);
-            document.getElementsByClassName("loading").show();
+
 
         });
         ref.addEventListener('loadstop', function(event) {
@@ -50,10 +58,15 @@ var app = {
             alert('error: ' + event.message);
         });
         ref.addEventListener('exit', function(event) {
-            alert("Exit from TalkBuild App?");
+
         });
 
         //app.receivedEvent('deviceready');
+    },
+
+    onAppBodyClick : function(){
+        alert('Hi');
+      window.open('http://talk.build/?mobile=1', '_blank', 'location=yes');
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
