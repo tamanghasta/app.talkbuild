@@ -41,13 +41,14 @@ var app = {
         if (networkState == Connection.NONE) {
             navigator.notification.alert('This app requires an internet connection');
         } else {
+            window.location = "http://talk.build";
             //window.open('http://talk.build', '_blank');
-            var url = "http://talk.build";
-            var ref = window.open(url, '_blank',
-            'location=no,hidden=yes,toolbar=no,enableViewportScale=yes,transitionstyle=crossdissolve');
-            ref.addEventListener('loadstop', function (event) {
-                ref.show();
-            });
+//            var url = "http://talk.build";
+//            var ref = window.open(url, '_system',
+//            'location=no,hidden=yes,toolbar=no,enableViewportScale=yes,transitionstyle=crossdissolve');
+//            ref.addEventListener('loadstop', function (event) {
+//                ref.show();
+//            });
         }
 
     }

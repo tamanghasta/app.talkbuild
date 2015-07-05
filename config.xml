@@ -10,6 +10,8 @@
   <content src="index.html" />
   <icon src="img/app_icon.png"/>
   <access origin="http://talk.build" subdomains="true"/>
+    !-- Allow links to example.com -->
+    <allow-navigation href="http://talk.build/*" />
   <!--<access origin="http://uat.talk.build" />-->
   
   <!-- Define app icon for each platform. -->

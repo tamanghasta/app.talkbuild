@@ -69,6 +69,9 @@
         },
         "org.apache.cordova.vibration": {
             "PACKAGE_NAME": "{039f91e0-233b-11e5-8b62-99dd50e75741}"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "{039f91e0-233b-11e5-8b62-99dd50e75741}"
         }
     },
     "dependent_plugins": {}

@@ -77,6 +77,9 @@
         },
         "org.apache.cordova.vibration": {
             "PACKAGE_NAME": "talk.build"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "talk.build"
         }
     },
     "dependent_plugins": {}
