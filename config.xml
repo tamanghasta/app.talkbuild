@@ -8,7 +8,7 @@
     Cfa Developers
   </author>
   <content src="index.html" />
-  <access origin="http://talk.build" subdomains="true" />
+  <access origin="*" subdomains="true" />
 
   <!-- Define app icon for each platform. -->
   <platform name="android">
