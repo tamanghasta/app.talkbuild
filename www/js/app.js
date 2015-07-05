@@ -31,7 +31,7 @@ var app = {
            
     },
     onDeviceReady: function () {
-        app.receivedEvent();
+        app.receivedEvent('deviceready');
         
     },
     receivedEvent: function (id) {

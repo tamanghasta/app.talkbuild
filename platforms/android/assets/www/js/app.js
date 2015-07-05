@@ -30,16 +30,26 @@ var app = {
         document.addEventListener('deviceready', this.onDeviceReady, false);
            
     },
-  
-    onDeviceReady: function () {       
+    onDeviceReady: function () {
+        app.receivedEvent('deviceready');
+        
+    },
+    receivedEvent: function (id) {
         var networkState = checkConnection();
-      
+
         /* load local files if there is not network connection */
         if (networkState == Connection.NONE) {
             navigator.notification.alert('This app requires an internet connection');
         } else {
-            window.open('http://talk.build', '_blank');
+            //window.open('http://talk.build', '_blank');
+            var url = "http://talk.build";
+            var ref = window.open(url, '_blank',
+            'location=no,hidden=yes,toolbar=no,enableViewportScale=yes,transitionstyle=crossdissolve');
+            ref.addEventListener('loadstop', function (event) {
+                ref.show();
+            });
         }
+
     }
    
    

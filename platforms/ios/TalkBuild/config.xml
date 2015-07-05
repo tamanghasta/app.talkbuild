@@ -22,7 +22,14 @@
     Cfa Developers
   </author>
     <content src="index.html" />
-    <access origin="*" subdomains="true" />
+    <icon src="img/app_icon.png" />
+    <access origin="http://talk.build" subdomains="true" />
+    <feature name="InAppBrowser">
+        <param name="ios-package" value="CDVInAppBrowser" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="ios-package" value="CDVConnection" />
+    </feature>
     <feature name="Console">
         <param name="ios-package" value="CDVLogger" />
     </feature>
@@ -34,11 +41,5 @@
     </feature>
     <feature name="Vibration">
         <param name="ios-package" value="CDVVibration" />
-    </feature>
-    <feature name="InAppBrowser">
-        <param name="ios-package" value="CDVInAppBrowser" />
-    </feature>
-    <feature name="NetworkStatus">
-        <param name="ios-package" value="CDVConnection" />
     </feature>
 </widget>

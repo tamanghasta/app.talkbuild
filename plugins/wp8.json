@@ -5,9 +5,31 @@
     },
     "config_munge": {
         "files": {
+            "Properties/WMAppManifest.xml": {
+                "parents": {
+                    "/Deployment/App/Capabilities": [
+                        {
+                            "xml": "<Capability Name=\"ID_CAP_NETWORKING\" />",
+                            "count": 3
+                        },
+                        {
+                            "xml": "<Capability Name=\"ID_CAP_IDENTITY_DEVICE\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
             "config.xml": {
                 "parents": {
                     "/*": [
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"wp-package\" value=\"InAppBrowser\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"wp-package\" value=\"NetworkStatus\" /></feature>",
+                            "count": 1
+                        },
                         {
                             "xml": "<feature name=\"Console\"><param name=\"wp-package\" value=\"DebugConsole\" /></feature>",
                             "count": 1
@@ -23,28 +45,6 @@
                         {
                             "xml": "<feature name=\"Vibration\"><param name=\"wp-package\" value=\"Vibration\" /></feature>",
                             "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"InAppBrowser\"><param name=\"wp-package\" value=\"InAppBrowser\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"NetworkStatus\"><param name=\"wp-package\" value=\"NetworkStatus\" /></feature>",
-                            "count": 1
-                        }
-                    ]
-                }
-            },
-            "Properties/WMAppManifest.xml": {
-                "parents": {
-                    "/Deployment/App/Capabilities": [
-                        {
-                            "xml": "<Capability Name=\"ID_CAP_IDENTITY_DEVICE\" />",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<Capability Name=\"ID_CAP_NETWORKING\" />",
-                            "count": 3
                         }
                     ]
                 }
@@ -52,23 +52,23 @@
         }
     },
     "installed_plugins": {
-        "org.apache.cordova.console": {
-            "PACKAGE_NAME": "{b950fb20-230c-11e5-897d-69e53771026c}"
-        },
-        "org.apache.cordova.device": {
-            "PACKAGE_NAME": "{b950fb20-230c-11e5-897d-69e53771026c}"
-        },
-        "org.apache.cordova.dialogs": {
-            "PACKAGE_NAME": "{b950fb20-230c-11e5-897d-69e53771026c}"
-        },
-        "org.apache.cordova.vibration": {
-            "PACKAGE_NAME": "{b950fb20-230c-11e5-897d-69e53771026c}"
-        },
         "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "{b950fb20-230c-11e5-897d-69e53771026c}"
+            "PACKAGE_NAME": "{039f91e0-233b-11e5-8b62-99dd50e75741}"
         },
         "cordova-plugin-network-information": {
-            "PACKAGE_NAME": "{b950fb20-230c-11e5-897d-69e53771026c}"
+            "PACKAGE_NAME": "{039f91e0-233b-11e5-8b62-99dd50e75741}"
+        },
+        "org.apache.cordova.console": {
+            "PACKAGE_NAME": "{039f91e0-233b-11e5-8b62-99dd50e75741}"
+        },
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "{039f91e0-233b-11e5-8b62-99dd50e75741}"
+        },
+        "org.apache.cordova.dialogs": {
+            "PACKAGE_NAME": "{039f91e0-233b-11e5-8b62-99dd50e75741}"
+        },
+        "org.apache.cordova.vibration": {
+            "PACKAGE_NAME": "{039f91e0-233b-11e5-8b62-99dd50e75741}"
         }
     },
     "dependent_plugins": {}

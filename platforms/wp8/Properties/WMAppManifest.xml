@@ -4,12 +4,12 @@
     <Languages xmlns="">
         <Language code="en-US" />
     </Languages>
-    <App Author="Cfa Developers" BitsPerPixel="32" Description="Social Media Network for construction professionals" Genre="apps.normal" ProductID="{b950fb20-230c-11e5-897d-69e53771026c}" Publisher="Cfa Developers" PublisherID="{db093ed5-53b1-45f7-af72-751e8f36ab80}" RuntimeType="Silverlight" Title="TalkBuild" Version="0.0.1" xmlns="">
+    <App Author="Cfa Developers" BitsPerPixel="32" Description="Social Media Network for construction professionals" Genre="apps.normal" ProductID="{039f91e0-233b-11e5-8b62-99dd50e75741}" Publisher="Cfa Developers" PublisherID="{db093ed5-53b1-45f7-af72-751e8f36ab80}" RuntimeType="Silverlight" Title="TalkBuild" Version="0.0.1" xmlns="">
         <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
         <Capabilities>
             <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
-            <Capability Name="ID_CAP_IDENTITY_DEVICE" />
             <Capability Name="ID_CAP_NETWORKING" />
+            <Capability Name="ID_CAP_IDENTITY_DEVICE" />
         </Capabilities>
         <Tasks>
             <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />

@@ -21,31 +21,35 @@
  */
 var app = {
     // Application Constructor
-    initialize: function() {
+    initialize: function () {
+        console.log("App Init");
         this.bindEvents();
     },
-    // Bind Event Listeners
-    //
-    // Bind any events that are required on startup. Common events are:
-    // 'load', 'deviceready', 'offline', and 'online'.
+   
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
            
     },
-    // deviceready Event Handler
-    //
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function () {
-        navigator.notification.alert('Device is ready');
-
+        app.receivedEvent('deviceready');
+        
+    },
+    receivedEvent: function (id) {
         var networkState = checkConnection();
+
         /* load local files if there is not network connection */
         if (networkState == Connection.NONE) {
             navigator.notification.alert('This app requires an internet connection');
         } else {
-            window.location = "http://talk.build";
+            //window.open('http://talk.build', '_blank');
+            var url = "http://talk.build";
+            var ref = window.open(url, '_blank',
+            'location=no,hidden=yes,toolbar=no,enableViewportScale=yes,transitionstyle=crossdissolve');
+            ref.addEventListener('loadstop', function (event) {
+                ref.show();
+            });
         }
+
     }
    
    
@@ -64,6 +68,6 @@ function checkConnection() {
     states[Connection.NONE] = 'No network connection';
 
     return networkState;
-}
+};
 
 app.initialize();

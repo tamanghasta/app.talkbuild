@@ -9,6 +9,14 @@
                 "parents": {
                     "/*": [
                         {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
                             "count": 1
                         },
@@ -18,14 +26,6 @@
                         },
                         {
                             "xml": "<feature name=\"Vibration\"><param name=\"android-package\" value=\"org.apache.cordova.vibration.Vibration\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -50,6 +50,12 @@
         }
     },
     "installed_plugins": {
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "talk.build"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "talk.build"
+        },
         "org.apache.cordova.console": {
             "PACKAGE_NAME": "talk.build"
         },
@@ -60,12 +66,6 @@
             "PACKAGE_NAME": "talk.build"
         },
         "org.apache.cordova.vibration": {
-            "PACKAGE_NAME": "talk.build"
-        },
-        "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "talk.build"
-        },
-        "cordova-plugin-network-information": {
             "PACKAGE_NAME": "talk.build"
         }
     },

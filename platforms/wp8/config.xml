@@ -9,7 +9,14 @@
     Cfa Developers
   </author>
     <content src="index.html" />
-    <access origin="*" subdomains="true" />
+    <icon src="img/app_icon.png" />
+    <access origin="http://talk.build" subdomains="true" />
+    <feature name="InAppBrowser">
+        <param name="wp-package" value="InAppBrowser" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="wp-package" value="NetworkStatus" />
+    </feature>
     <feature name="Console">
         <param name="wp-package" value="DebugConsole" />
     </feature>
@@ -21,11 +28,5 @@
     </feature>
     <feature name="Vibration">
         <param name="wp-package" value="Vibration" />
-    </feature>
-    <feature name="InAppBrowser">
-        <param name="wp-package" value="InAppBrowser" />
-    </feature>
-    <feature name="NetworkStatus">
-        <param name="wp-package" value="NetworkStatus" />
     </feature>
 </widget>
