@@ -222,16 +222,13 @@
         </PostBuildEvent>
     </PropertyGroup>
     <ItemGroup>
-        <Compile Include="Plugins\org.apache.cordova.device\Device.cs" />
+        <Compile Include="Plugins\cordova-plugin-network-information\NetworkStatus.cs" />
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Plugins\org.apache.cordova.console\DebugConsole.cs" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Plugins\org.apache.cordova.inappbrowser\InAppBrowser.cs" />
-    </ItemGroup>
-    <ItemGroup>
-        <Compile Include="Plugins\cordova-plugin-network-information\NetworkStatus.cs" />
+        <Compile Include="Plugins\org.apache.cordova.device\Device.cs" />
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Plugins\org.apache.cordova.dialogs\Notification.cs" />
@@ -244,6 +241,9 @@
     <ItemGroup />
     <ItemGroup>
         <Content Include="Plugins\org.apache.cordova.dialogs\notification-beep.wav" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Plugins\org.apache.cordova.inappbrowser\InAppBrowser.cs" />
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Plugins\org.apache.cordova.vibration\Vibration.cs" />

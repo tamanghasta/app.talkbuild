@@ -14,30 +14,29 @@
     <feature name="LocalStorage">
         <param name="ios-package" value="CDVLocalStorage" />
     </feature>
-    <feature name="Device">
-        <param name="ios-package" value="CDVDevice" />
+    <name>TalkBuild</name>
+    <description>
+    Social Media Network for construction professionals
+  </description>
+    <author email="developers@cfadigital.com" href="http://cfa-marketing.com">
+    Cfa Developers
+  </author>
+    <content src="index.html" />
+    <access origin="*" subdomains="true" />
+    <feature name="NetworkStatus">
+        <param name="ios-package" value="CDVConnection" />
     </feature>
     <feature name="Console">
         <param name="ios-package" value="CDVLogger" />
     </feature>
-    <name>TalkBuild</name>
-    <description>
-        Talk.Build - The Social Media Network for construction professionals
-    </description>
-    <author email="developers@cfadigital.com" href="http://cfa-marketing.com">
-        Cfa Developers
-    </author>
-    <content src="index.html" />
-    <access origin="*" />
-    <icon src="icon.png" />
-    <feature name="InAppBrowser">
-        <param name="ios-package" value="CDVInAppBrowser" />
-    </feature>
-    <feature name="NetworkStatus">
-        <param name="ios-package" value="CDVConnection" />
+    <feature name="Device">
+        <param name="ios-package" value="CDVDevice" />
     </feature>
     <feature name="Notification">
         <param name="ios-package" value="CDVNotification" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="ios-package" value="CDVInAppBrowser" />
     </feature>
     <feature name="Vibration">
         <param name="ios-package" value="CDVVibration" />

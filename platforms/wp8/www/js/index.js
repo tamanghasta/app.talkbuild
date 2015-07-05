@@ -25,6 +25,8 @@ function createIframe() {
     i.width = "100%";
     i.height = "100%";
     document.getElementById("frameContainer").appendChild(i);
+
+
 };
 
 // Check for browser support of event handling capability

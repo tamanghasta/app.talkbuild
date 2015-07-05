@@ -1,29 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="talk.build" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <feature name="Device">
-        <param name="wp-package" value="Device" />
+    <access origin="*" />
+    <name>TalkBuild</name>
+    <description>
+    Social Media Network for construction professionals
+  </description>
+    <author email="developers@cfadigital.com" href="http://cfa-marketing.com">
+    Cfa Developers
+  </author>
+    <content src="index.html" />
+    <access origin="*" subdomains="true" />
+    <feature name="NetworkStatus">
+        <param name="wp-package" value="NetworkStatus" />
     </feature>
     <feature name="Console">
         <param name="wp-package" value="DebugConsole" />
     </feature>
-    <name>TalkBuild</name>
-    <description>
-        Talk.Build - The Social Media Network for construction professionals
-    </description>
-    <author email="developers@cfadigital.com" href="http://cfa-marketing.com">
-        Cfa Developers
-    </author>
-    <content src="index.html" />
-    <access origin="*" />
-    <icon src="icon.png" />
-    <feature name="InAppBrowser">
-        <param name="wp-package" value="InAppBrowser" />
-    </feature>
-    <feature name="NetworkStatus">
-        <param name="wp-package" value="NetworkStatus" />
+    <feature name="Device">
+        <param name="wp-package" value="Device" />
     </feature>
     <feature name="Notification">
         <param name="wp-package" value="Notification" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="wp-package" value="InAppBrowser" />
     </feature>
     <feature name="Vibration">
         <param name="wp-package" value="Vibration" />
