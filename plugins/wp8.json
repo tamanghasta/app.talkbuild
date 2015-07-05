@@ -9,10 +9,6 @@
                 "parents": {
                     "/*": [
                         {
-                            "xml": "<feature name=\"NetworkStatus\"><param name=\"wp-package\" value=\"NetworkStatus\" /></feature>",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"Console\"><param name=\"wp-package\" value=\"DebugConsole\" /></feature>",
                             "count": 1
                         },
@@ -25,11 +21,11 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"InAppBrowser\"><param name=\"wp-package\" value=\"InAppBrowser\" /></feature>",
+                            "xml": "<feature name=\"Vibration\"><param name=\"wp-package\" value=\"Vibration\" /></feature>",
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"Vibration\"><param name=\"wp-package\" value=\"Vibration\" /></feature>",
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"wp-package\" value=\"InAppBrowser\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -39,12 +35,12 @@
                 "parents": {
                     "/Deployment/App/Capabilities": [
                         {
-                            "xml": "<Capability Name=\"ID_CAP_NETWORKING\" />",
-                            "count": 3
-                        },
-                        {
                             "xml": "<Capability Name=\"ID_CAP_IDENTITY_DEVICE\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<Capability Name=\"ID_CAP_NETWORKING\" />",
+                            "count": 2
                         }
                     ]
                 }
@@ -52,9 +48,6 @@
         }
     },
     "installed_plugins": {
-        "cordova-plugin-network-information": {
-            "PACKAGE_NAME": "{b950fb20-230c-11e5-897d-69e53771026c}"
-        },
         "org.apache.cordova.console": {
             "PACKAGE_NAME": "{b950fb20-230c-11e5-897d-69e53771026c}"
         },
@@ -64,10 +57,10 @@
         "org.apache.cordova.dialogs": {
             "PACKAGE_NAME": "{b950fb20-230c-11e5-897d-69e53771026c}"
         },
-        "org.apache.cordova.inappbrowser": {
+        "org.apache.cordova.vibration": {
             "PACKAGE_NAME": "{b950fb20-230c-11e5-897d-69e53771026c}"
         },
-        "org.apache.cordova.vibration": {
+        "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "{b950fb20-230c-11e5-897d-69e53771026c}"
         }
     },

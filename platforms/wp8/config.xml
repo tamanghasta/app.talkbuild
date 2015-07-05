@@ -10,9 +10,6 @@
   </author>
     <content src="index.html" />
     <access origin="*" subdomains="true" />
-    <feature name="NetworkStatus">
-        <param name="wp-package" value="NetworkStatus" />
-    </feature>
     <feature name="Console">
         <param name="wp-package" value="DebugConsole" />
     </feature>
@@ -22,10 +19,10 @@
     <feature name="Notification">
         <param name="wp-package" value="Notification" />
     </feature>
-    <feature name="InAppBrowser">
-        <param name="wp-package" value="InAppBrowser" />
-    </feature>
     <feature name="Vibration">
         <param name="wp-package" value="Vibration" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="wp-package" value="InAppBrowser" />
     </feature>
 </widget>

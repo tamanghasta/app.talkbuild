@@ -222,9 +222,6 @@
         </PostBuildEvent>
     </PropertyGroup>
     <ItemGroup>
-        <Compile Include="Plugins\cordova-plugin-network-information\NetworkStatus.cs" />
-    </ItemGroup>
-    <ItemGroup>
         <Compile Include="Plugins\org.apache.cordova.console\DebugConsole.cs" />
     </ItemGroup>
     <ItemGroup>
@@ -243,9 +240,9 @@
         <Content Include="Plugins\org.apache.cordova.dialogs\notification-beep.wav" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Plugins\org.apache.cordova.inappbrowser\InAppBrowser.cs" />
+        <Compile Include="Plugins\org.apache.cordova.vibration\Vibration.cs" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Plugins\org.apache.cordova.vibration\Vibration.cs" />
+        <Compile Include="Plugins\cordova-plugin-inappbrowser\InAppBrowser.cs" />
     </ItemGroup>
 </Project>
