@@ -28,4 +28,7 @@
     <content src="index.html" />
     <icon src="img/app_icon.png" />
     <access origin="http://talk.build" subdomains="true" />
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
 </widget>

@@ -7,7 +7,12 @@
         "files": {
             "framework": {
                 "parents": {
-                    "SystemConfiguration.framework": [],
+                    "SystemConfiguration.framework": [
+                        {
+                            "xml": true,
+                            "count": 1
+                        }
+                    ],
                     "AudioToolbox.framework": [
                         {
                             "xml": true,
@@ -44,6 +49,10 @@
                         {
                             "xml": "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVInAppBrowser\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"ios-package\" value=\"CDVConnection\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -64,6 +73,9 @@
             "PACKAGE_NAME": "talk.build"
         },
         "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "talk.build"
+        },
+        "cordova-plugin-network-information": {
             "PACKAGE_NAME": "talk.build"
         }
     },

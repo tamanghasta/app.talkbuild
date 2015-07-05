@@ -25,4 +25,7 @@
     <feature name="InAppBrowser">
         <param name="wp-package" value="InAppBrowser" />
     </feature>
+    <feature name="NetworkStatus">
+        <param name="wp-package" value="NetworkStatus" />
+    </feature>
 </widget>
