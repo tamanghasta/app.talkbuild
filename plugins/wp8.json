@@ -19,6 +19,18 @@
                         {
                             "xml": "<feature name=\"InAppBrowser\"><param name=\"wp-package\" value=\"InAppBrowser\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"wp-package\" value=\"NetworkStatus\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Notification\"><param name=\"wp-package\" value=\"Notification\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Vibration\"><param name=\"wp-package\" value=\"Vibration\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -32,7 +44,7 @@
                         },
                         {
                             "xml": "<Capability Name=\"ID_CAP_NETWORKING\" />",
-                            "count": 2
+                            "count": 3
                         }
                     ]
                 }
@@ -47,6 +59,15 @@
             "PACKAGE_NAME": "{dcb68d80-1eea-11e5-9cfd-8d1cc6c4f41f}"
         },
         "org.apache.cordova.inappbrowser": {
+            "PACKAGE_NAME": "{dcb68d80-1eea-11e5-9cfd-8d1cc6c4f41f}"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "{dcb68d80-1eea-11e5-9cfd-8d1cc6c4f41f}"
+        },
+        "org.apache.cordova.dialogs": {
+            "PACKAGE_NAME": "{dcb68d80-1eea-11e5-9cfd-8d1cc6c4f41f}"
+        },
+        "org.apache.cordova.vibration": {
             "PACKAGE_NAME": "{dcb68d80-1eea-11e5-9cfd-8d1cc6c4f41f}"
         }
     },

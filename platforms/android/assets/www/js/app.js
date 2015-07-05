@@ -30,44 +30,36 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
-        var divApp = document.getElementsByClassName('app');
-        var el = divApp[0];
-
-        el.addEventListener('click', this.onAppBodyClick, false);
+       
     },
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
-        var ref = window.open('http://talk.build/?mobile=1', '_blank', 'location=yes');
-        var bodyClick = document.getElementsByTagName("body");
-        bodyClick.addEventListener("click",function(){
-            window.open('http://talk.build/?mobile=1', '_blank', 'location=yes')
-        })
-        ref.addEventListener('loadstart', function(event) {
-//            alert('start: ' + event.url);
-
-
-        });
-        ref.addEventListener('loadstop', function(event) {
-//            alert('stop: ' + event.url);
-            ref.insertCSS({file: "css/override.css"});
-        });
-        ref.addEventListener('loaderror', function(event) {
-            alert('error: ' + event.message);
-        });
-        ref.addEventListener('exit', function(event) {
-
-        });
-
-        //app.receivedEvent('deviceready');
+    onDeviceReady: function () {
+        var networkState = app.checkConnection();
+        /* load local files if there is not network connection */
+        if (networkState == Connection.NONE) {
+            navigator.notification.alert('This app requires an internet connection');
+        } else {
+            window.location = "http://talk.build";
+        }
     },
 
-    onAppBodyClick : function(){
+    checkConnection: function(){
+        var networkState = navigator.network.connection.type;
+        var states = {};
+        states[Connection.UNKNOWN] = 'Unknown connection';
+        states[Connection.ETHERNET] = 'Ethernet connection';
+        states[Connection.WIFI] = 'WiFi connection';
+        states[Connection.CELL_2G] = 'Cell 2G connection';
+        states[Connection.CELL_3G] = 'Cell 3G connection';
+        states[Connection.CELL_4G] = 'Cell 4G connection';
+        states[Connection.NONE] = 'No network connection';
 
-      window.open('http://talk.build/?mobile=1', '_blank', 'location=yes');
+        return networkState;
     },
+   
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
