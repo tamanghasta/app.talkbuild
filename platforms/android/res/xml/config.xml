@@ -29,5 +29,5 @@
     Cfa Developers
   </author>
     <content src="index.html" />
-    <access origin="http://talk.build" subdomain="true" />
+    <access origin="http://talk.build" subdomains="true" />
 </widget>

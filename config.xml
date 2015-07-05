@@ -8,8 +8,9 @@
     Cfa Developers
   </author>
   <content src="index.html" />
-  <access origin="http://talk.build" subdomain="true"/>
+  <access origin="http://talk.build" subdomains="true"/>
   <!--<access origin="http://uat.talk.build" />-->
+  
   <!-- Define app icon for each platform. -->
   <platform name="android">
     <icon src="resources/android/icon/drawable-mdpi-icon.png" density="mdpi"/>
@@ -18,4 +19,5 @@
     <icon src="resources/android/icon/drawable-xxhdpi-icon.png" density="xxhdpi"/>
     <icon src="resources/android/icon/drawable-xxxhdpi-icon.png" density="xxxhdpi"/>
   </platform>
+  
 </widget>
