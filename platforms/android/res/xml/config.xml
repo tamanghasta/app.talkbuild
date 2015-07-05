@@ -7,14 +7,18 @@
     <feature name="InAppBrowser">
         <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
     </feature>
+    <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
+    <icon density="hdpi" src="resources/android/icon/drawable-hdpi-icon.png" />
+    <icon density="xhdpi" src="resources/android/icon/drawable-xhdpi-icon.png" />
+    <icon density="xxhdpi" src="resources/android/icon/drawable-xxhdpi-icon.png" />
+    <icon density="xxxhdpi" src="resources/android/icon/drawable-xxxhdpi-icon.png" />
     <name>TalkBuild</name>
     <description>
-       Social Media Network for construction professionals
-    </description>
+    Social Media Network for construction professionals
+  </description>
     <author email="developers@cfadigital.com" href="http://cfa-marketing.com">
-        Cfa Developers
-    </author>
+    Cfa Developers
+  </author>
     <content src="index.html" />
     <access origin="*" />
-    <icon src="icon.png" />
 </widget>

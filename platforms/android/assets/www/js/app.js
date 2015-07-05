@@ -65,7 +65,7 @@ var app = {
     },
 
     onAppBodyClick : function(){
-        alert('Hi');
+
       window.open('http://talk.build/?mobile=1', '_blank', 'location=yes');
     },
     // Update DOM on a Received Event
