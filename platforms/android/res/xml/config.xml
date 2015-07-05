@@ -1,20 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="talk.build" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
-    <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
-    <icon density="hdpi" src="resources/android/icon/drawable-hdpi-icon.png" />
-    <icon density="xhdpi" src="resources/android/icon/drawable-xhdpi-icon.png" />
-    <icon density="xxhdpi" src="resources/android/icon/drawable-xxhdpi-icon.png" />
-    <icon density="xxxhdpi" src="resources/android/icon/drawable-xxxhdpi-icon.png" />
-    <name>TalkBuild</name>
-    <description>
-    Social Media Network for construction professionals
-  </description>
-    <author email="developers@cfadigital.com" href="http://cfa-marketing.com">
-    Cfa Developers
-  </author>
-    <content src="index.html" />
-    <access origin="*" subdomains="true" />
     <feature name="NetworkStatus">
         <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
     </feature>
@@ -30,4 +16,18 @@
     <feature name="Vibration">
         <param name="android-package" value="org.apache.cordova.vibration.Vibration" />
     </feature>
+    <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
+    <icon density="hdpi" src="resources/android/icon/drawable-hdpi-icon.png" />
+    <icon density="xhdpi" src="resources/android/icon/drawable-xhdpi-icon.png" />
+    <icon density="xxhdpi" src="resources/android/icon/drawable-xxhdpi-icon.png" />
+    <icon density="xxxhdpi" src="resources/android/icon/drawable-xxxhdpi-icon.png" />
+    <name>TalkBuild</name>
+    <description>
+    Social Media Network for construction professionals
+  </description>
+    <author email="developers@cfadigital.com" href="http://cfa-marketing.com">
+    Cfa Developers
+  </author>
+    <content src="index.html" />
+    <access origin="http://talk.build" subdomain="true" />
 </widget>

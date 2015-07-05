@@ -21,7 +21,8 @@
  */
 var app = {
     // Application Constructor
-    initialize: function() {
+    initialize: function () {
+        console.log("App Init");
         this.bindEvents();
     },
     // Bind Event Listeners
@@ -36,14 +37,13 @@ var app = {
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
-    onDeviceReady: function () {
-        navigator.notification.alert('Device is ready');
-
+    onDeviceReady: function () {       
         var networkState = checkConnection();
         /* load local files if there is not network connection */
         if (networkState == Connection.NONE) {
             navigator.notification.alert('This app requires an internet connection');
         } else {
+            navigator.notification.alert('Navigating to your app');
             window.location = "http://talk.build";
         }
     }
@@ -64,6 +64,6 @@ function checkConnection() {
     states[Connection.NONE] = 'No network connection';
 
     return networkState;
-}
+};
 
 app.initialize();
