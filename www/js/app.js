@@ -43,7 +43,7 @@ var app = {
         } else {
             //window.open('http://talk.build', '_blank');
             var url = "http://talk.build";
-            var ref = window.open(url, '_blank',
+            var ref = window.open(url, '_system',
             'location=no,hidden=yes,toolbar=no,enableViewportScale=yes,transitionstyle=crossdissolve');
             ref.addEventListener('loadstop', function (event) {
                 ref.show();
