@@ -8,6 +8,7 @@
     Cfa Developers
   </author>
   <content src="index.html" />
+  <icon src="img/app_icon.png"/>
   <access origin="http://talk.build" subdomains="true"/>
   <!--<access origin="http://uat.talk.build" />-->
   

@@ -39,18 +39,13 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function () {       
         var networkState = checkConnection();
-        window.open('http://talk.build', '_blank', 'location = yes');
       
-        ///* load local files if there is not network connection */
-        //if (networkState == Connection.NONE) {
-        //    navigator.notification.alert('This app requires an internet connection');
-        //} else {
-        //    navigator.notification.alert('Navigating to your app');
-
-           
-
-        //    //window.location = "http://talk.build";
-        //}
+        /* load local files if there is not network connection */
+        if (networkState == Connection.NONE) {
+            navigator.notification.alert('This app requires an internet connection');
+        } else {
+            window.open('http://talk.build', '_blank');
+        }
     }
    
    
